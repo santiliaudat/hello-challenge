@@ -41,7 +41,7 @@ const commentsFake = [
 describe('Comments Reducer', () => {
   it('Should return loading state', () => {
     store.dispatch(getCommentsAction());
-    expect(store.getState()).toEqual({ ...initialStateMock, status: 'loading' });
+    expect(store.getState()).equal({ ...initialStateMock, status: 'loading' });
   });
 
   it('Should return new state when receive comments', () => {
@@ -51,7 +51,7 @@ describe('Comments Reducer', () => {
       status: 'succeeded',
     };
     store.dispatch(getCommentsSuccessAction(commentsFake));
-    expect(store.getState()).toEqual(stateSuccess);
+    expect(store.getState()).equal(stateSuccess);
   });
 
   it('Should return new state when add comments', () => {
@@ -64,6 +64,6 @@ describe('Comments Reducer', () => {
     };
     let expectedState = [...commentsFake, newComment];
     store.dispatch(addCommentAction(newComment));
-    expect(store.getState().comments).toEqual(expectedState);
+    expect(store.getState().comments).equal(expectedState);
   });
 });

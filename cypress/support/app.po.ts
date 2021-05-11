@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 export const appComponent = {
   get loadingSpinner(): Cypress.Chainable<JQuery> {
     return cy.get('[data-cy="loading"]');

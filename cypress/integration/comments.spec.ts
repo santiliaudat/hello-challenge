@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('comments', () => {
   context('on click comments button', () => {
     it('change button text', () => {
@@ -14,7 +16,7 @@ describe('comments', () => {
       cy.get('[data-cy="comments-container"]');
     });
   });
-  
+
   context('submit comment form', () => {
     it('submit form and show the comment in the last position', () => {
       cy.visit('http://localhost:3000/');

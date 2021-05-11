@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 import { appComponent } from '../support/app.po';
 
 describe('app loading post data', () => {
