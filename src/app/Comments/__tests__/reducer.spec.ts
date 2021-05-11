@@ -1,4 +1,3 @@
-import { GET_COMMENTS, GET_COMMENTS_SUCCESS, ADD_COMMENT } from '../state/types';
 import { getCommentsReducer } from '../state/reducer';
 import { getCommentsAction, getCommentsSuccessAction, addCommentAction } from '../state/actions';
 import { createStore } from 'redux';
