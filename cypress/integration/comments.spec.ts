@@ -29,3 +29,5 @@ describe('comments', () => {
     });
   });
 });
+
+export default {}
