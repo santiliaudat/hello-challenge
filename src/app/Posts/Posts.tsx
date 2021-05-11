@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../ui/Layout';
-// import Comments from '../Comments';
+import Comments from '../Comments';
 import usePosts from './hooks/usePosts';
 import './Posts.css';
 
@@ -24,7 +24,7 @@ const Posts = () => {
                 <p className="card-description">{post.body}</p>
               </div>
               <div className="card-footer">
-                comments list
+                <Comments postId={post.id} />
               </div>
             </div>
           </div>

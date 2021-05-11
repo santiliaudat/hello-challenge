@@ -1,0 +1,95 @@
+button.link {
+  background: transparent;
+  border: none;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+}
+
+button.link:hover {
+  color: blue;
+}
+
+.comments-container {
+  margin: 1rem;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comments-container {
+  overflow: hidden;
+}
+
+.comments-container:hover {
+  overflow-y: scroll;
+}
+
+.comment-object {
+  display: flex;
+  justify-content: start;
+  line-height: 1.7em;
+  padding: 0 2em 0 0.5em;
+  box-sizing: border-box;
+}
+
+.comment-object:last-of-type {
+  margin-bottom: 0;
+}
+
+.comment-text {
+  width: 100%;
+  color: grey;
+}
+
+.comment-text h4 {
+  margin-bottom: 0.2em;
+  color: black;
+}
+
+.comment {
+  margin: 0;
+  padding: 0;
+}
+
+.muted {
+  color: black;
+  font-weight: 100;
+}
+
+.comments-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+.comments-form input {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #e6e6e6;
+}
+
+.comments-form-name {
+  flex: 1 1 10ch;
+}
+
+.comments-form-email {
+  flex: 2 1 10ch;
+}
+
+.comments-form-text {
+  flex: 1 1 100%;
+}
+
+.comment-submit {
+  margin: 5px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
